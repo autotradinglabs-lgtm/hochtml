@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Website cơ bản | Starter</title>
+  <meta name="description" content="Bộ khởi đầu làm website cơ bản: HTML + CSS + JS, responsive." />
+  <meta property="og:title" content="Website cơ bản | Starter" />
+  <meta property="og:description" content="Khung HTML5 tối giản, đẹp, dễ chỉnh sửa." />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js" defer></script>
+
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="brand">Học làm web</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Mở menu">☰</button>
+      <nav id="site-nav" class="site-nav" aria-label="Chính">
+        <a href="#gioi-thieu">Giới thiệu</a>
+        <a href="#dich-vu">Dịch vụ</a>
+        <a href="#lien-he">Liên hệ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>Chỉnh sửa website trong 5 phút. đúng ko</h1>
+        <p id="hero-desc">Bộ khung HTML + CSS + JS tối giản, responsive, dễ mở rộng cho người mới bắt đầu.</p>
+        <div class="actions">
+          <a class="btn primary" href="#" id="btn-features"
+         data-new="✨ Tính năng: HTML5 chuẩn • Responsive • Dễ chỉnh • Deploy 1 click.">Xem tính năng</a>
+          <a class="btn" href="#lien-he">Liên hệ</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="gioi-thieu" class="container section">
+      <h2>Giới thiệu</h2>
+      <p>Đây là mẫu trang cơ bản giúp bạn học và khởi chạy website nhanh chóng. Bạn có thể đổi màu chủ đạo, font chữ, bố cục một cách dễ dàng.</p>
+    </section>
+
+    <section id="dich-vu" class="container section features">
+      <h2>Tính năng</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Chuẩn HTML5</h3>
+          <p>Cấu trúc semantic (header, main, section, footer), SEO &amp; truy cập tốt.</p>
+        </article>
+        <article class="card">
+          <h3>Responsive</h3>
+          <p>Bố cục co giãn với Grid/Flex; hiển thị tốt trên mobile &amp; desktop.</p>
+        </article>
+        <article class="card">
+          <h3>Dễ chỉnh</h3>
+          <p>Dùng biến CSS để thay đổi màu/spacing; JS tối giản, dễ mở rộng.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="lien-he" class="container section">
+      <h2>Liên hệ</h2>
+      <form class="contact" action="mailto:ban@example.com" method="post" enctype="text/plain">
+        <label>
+          Tên
+          <input type="text" name="name" placeholder="Tên của bạn" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" placeholder="email@domain.com" required>
+        </label>
+        <label>
+          Lời nhắn
+          <textarea name="message" rows="4" placeholder="Nội dung…" required></textarea>
+        </label>
+        <button type="submit" class="btn primary">Gửi</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© 2025 Tên Thương Hiệu — Xây dựng bằng HTML • CSS • JS</small>
+    </div>
+  </footer>
+</body>
+</html>
